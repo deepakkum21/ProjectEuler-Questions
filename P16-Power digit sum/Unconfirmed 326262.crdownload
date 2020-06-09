@@ -1,0 +1,102 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "P16-Power digit sum.ipynb",
+      "provenance": []
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "HIpbZ_FHHLXD",
+        "colab_type": "text"
+      },
+      "source": [
+        "# P-16- Power digit sum\n",
+        "<h1>https://projecteuler.net/problem=16</h1>\n",
+        "\n",
+        "2 power 15 = 32768 and the sum of its digits is 3 + 2 + 7 + 6 + 8 = 26.\n",
+        "\n",
+        "What is the sum of the digits of the number 2power1000?"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "U8PN_qW3fHLV",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "pow_2_1000 = (str)(2**1000)"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "IwbeNEyS2VlC",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 55
+        },
+        "outputId": "8f65b205-5275-4293-a3ac-af662a94d5d3"
+      },
+      "source": [
+        "pow_2_1000"
+      ],
+      "execution_count": 44,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "'10715086071862673209484250490600018105614048117055336074437503883703510511249361224931983788156958581275946729175531468251871452856923140435984577574698574803934567774824230985421074605062371141877954182153046474983581941267398767559165543946077062914571196477686542167660429831652624386837205668069376'"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 44
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "0hPVgw7M0iR9",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 35
+        },
+        "outputId": "74cfab06-3a33-447a-fb13-21bce4b59b42"
+      },
+      "source": [
+        "sum = 0\n",
+        "for i in pow_2_1000:\n",
+        "  sum=sum +int(i)\n",
+        "print(sum)"
+      ],
+      "execution_count": 45,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "1366\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    }
+  ]
+}
